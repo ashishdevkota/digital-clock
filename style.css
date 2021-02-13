@@ -1,1 +1,65 @@
-/* working */
+/*load orbitron font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+
+
+/*reset css*/
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+
+body{
+    background:url('./pattern.png');
+}
+
+.main{
+  background-color:#347798;
+  margin:200px auto;
+  width:400px;
+  height:200px; 
+}
+
+#clock-badge{
+    width:200px;
+    height:35px;
+    position:relative;
+    padding:20px;
+    color:#fff;
+    font-family:orbitron;
+}
+
+#clock-badge::after{
+    content:"mkct-clockly";
+    height:100%;
+    width:100%;
+    font-size:25px;
+    font-weight:500;
+    letter-spacing:1px;
+    padding:5px 0;
+    text-align: center;
+    position: absolute;
+    background-color: darkred;
+    top:-15px;
+    left:100px;
+}
+
+
+.clock{
+    background-color:antiquewhite;
+    color:#fff;
+    width:300px;
+    margin:10px auto;
+    height:120px;
+    line-height:3;
+}
+
+span{
+    font-size:40px;
+    font-weight:700;
+    color:rgb(26, 14, 14);
+    font-family:orbitron;
+    margin-left:16px;
+}
