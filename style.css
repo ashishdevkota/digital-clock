@@ -14,8 +14,7 @@
 body{
     background-image: url('./img/day.png');
     background-size:cover;
-    position: relative;
-   
+    position: relative;  
 }
 .active{
     background-image:url('./img/night.jpg');
@@ -120,3 +119,4 @@ span{
 input:checked:before{
     transform: translate(100%);
 }
+
