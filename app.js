@@ -18,6 +18,22 @@ let clock=()=>{
     document.querySelector('#hours').textContent=hours + ":";
     document.querySelector('#minutes').textContent=minutes+ ":";
     document.querySelector('#seconds').textContent=seconds;    
+
+
+ let date=fullDate.toLocaleDateString();
+ document.querySelector('#date').textContent="Date : "+ date;
+
 }
 
 setInterval(clock,100);
+
+//toggle
+let body=document.querySelector('body'); 
+let checkedbox=document.querySelector('#toggle');
+checkedbox.addEventListener('click',(e)=>{
+   if(body.className==""){
+            body.classList.add('active');
+         }else{
+            body.classList.remove('active');
+         }
+})
